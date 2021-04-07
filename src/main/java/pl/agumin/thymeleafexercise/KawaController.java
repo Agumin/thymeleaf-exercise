@@ -10,7 +10,8 @@ public class KawaController {
 
     @GetMapping("/kawa")
     public String get(Model model) {
-        model.addAttribute("name", "espresso");
+        AnimeHusbando anime = new AnimeHusbando("AOT", "Levi Ackerman");
+        model.addAttribute("anime", anime);
         return "kawa";
     }
 
