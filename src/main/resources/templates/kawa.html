@@ -8,8 +8,13 @@
 
 <h1>NAJLEPSI HUSBANDO <3</h1>
 <p>Nigdy sobie nie znajdę chłopaka :(</p>
-<p th:text="${anime.getMark}"></p>
-<p th:text="${anime.getModel}"></p>
+
+<tr th:each="anime: ${animes}">
+<td th:text="${anime.getMark()}"/><br>
+    <td th:text="${anime.getModel()}"/><br>
+    <p>***</p>
+</tr>
+
 
 </body>
 </html>
