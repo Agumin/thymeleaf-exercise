@@ -15,6 +15,11 @@
     <p>***</p>
 </tr>
 
+<form th:action="@{/add-anime}"  th:object="${newAnimeHusbando}" method="post">
+    <p>Model: <input type="text" th:field="*{model}"></p>
+    <p>Mark: <input type="text" th:field="*{mark}"></p>
+    <p><input type="submit" value="add new anime boy"></p>
+</form>
 
 </body>
 </html>
